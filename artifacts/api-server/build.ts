@@ -51,7 +51,7 @@ async function buildAll() {
   const externals = allDeps.filter(
     (dep) =>
       !allowlist.includes(dep) &&
-      !(pkg.dependencies?.[dep]?.startsWith("workspace:")),
+      !dep.startsWith("@workspace/"),  // Bundle all local @workspace packages
   );
 
   await esbuild({
