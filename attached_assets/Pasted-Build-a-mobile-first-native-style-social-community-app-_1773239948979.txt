@@ -1,0 +1,622 @@
+Build a mobile-first, native-style social community app called CONNECT CLUB.
+
+IMPORTANT OVERALL DIRECTION:
+This is NOT a generic event website.
+This is NOT a desktop-first dashboard.
+This is NOT a simple ticket booking page.
+
+This must feel like a real mobile social app for a lifestyle community led by Jenna.
+The app should feel premium, intimate, clean, modern, and highly usable on mobile.
+It must be designed primarily for phone screens first, with desktop only adapting secondarily.
+
+CORE PRODUCT PURPOSE:
+Connect Club is a private social app that replaces WhatsApp as the main community home for Jenna’s audience.
+
+The goal is to let users:
+- sign up and join the Connect Club community
+- stay updated with Jenna’s posts and announcements
+- receive push notifications when Jenna posts or loads something new
+- view and join events Jenna hosts
+- participate in challenges Jenna creates
+- check in at events
+- complete surveys, forms, and polls inside the app
+- engage with the community in a clean, organized way
+
+The goal is to let Jenna:
+- post updates to her community
+- promote events and special experiences
+- create challenge-based ticket giveaways
+- post live locations for community activations
+- load forms, surveys, and polls directly inside the app
+- notify users instantly through push notifications
+- promote venue partners, collaborators, and business deals
+- build a stronger, more professional brand platform than Instagram + WhatsApp alone
+
+BIG OBJECTIVE:
+Replace fragmented community communication:
+Instagram + WhatsApp + random links + external forms
+
+With one clean system:
+Connect Club App
+
+BRAND POSITIONING:
+This should feel like:
+- a private members club
+- a social community app
+- a lifestyle experience platform
+- Jenna’s digital clubhouse
+
+It should NOT feel like:
+- Eventbrite
+- a boring admin system
+- a WhatsApp clone
+- a corporate event portal
+
+STYLE / VISUAL DIRECTION:
+Use a premium, soft, feminine, modern lifestyle aesthetic.
+
+Primary color direction:
+- matte pink
+- nude tones
+- soft warm neutrals
+
+Visual feel:
+- clean
+- elegant
+- minimal but warm
+- social app energy
+- modern mobile UI
+- smooth rounded cards
+- subtle depth
+- premium spacing
+- calm but stylish
+- not childish
+- not loud neon
+- not harsh dark UI
+
+Suggested palette direction:
+- matte dusty pink
+- nude beige
+- warm cream
+- soft blush
+- muted rose
+- light sand
+- off-white backgrounds
+- dark charcoal text for readability
+
+Use this palette consistently across:
+- buttons
+- cards
+- badges
+- tabs
+- form elements
+- onboarding screens
+- notifications
+- profile screens
+
+APP EXPERIENCE REQUIREMENTS:
+This must feel like a native app.
+Make it installable as a PWA with clean popup install behavior.
+The user should be able to install it directly from browser to phone home screen without needing the Play Store.
+The install experience must be simple and polished.
+
+PWA / NATIVE-LIKE REQUIREMENTS:
+- installable on mobile
+- app icon and splash-ready setup
+- proper manifest
+- service worker
+- smooth app shell experience
+- mobile safe areas respected
+- persistent login
+- user stays logged in after closing and reopening app unless they explicitly log out
+- no repeated sign-in annoyance
+- fast mobile loading
+- responsive and touch-friendly
+- bottom navigation for mobile
+- native-style transitions where possible
+- notification permission prompt handled cleanly
+
+PUSH NOTIFICATION REQUIREMENTS:
+Push notifications are a major feature.
+When Jenna posts or loads something important, users who turned notifications on must receive it.
+
+Examples of notification-triggering content:
+- new event posted
+- event reminder
+- challenge posted
+- live location posted
+- survey posted
+- form posted
+- poll posted
+- partner promotion posted
+- winners announced
+- special last-minute drop
+
+The notification system should be clearly structured and ready to scale.
+
+USER TYPES:
+1. Community Member / User
+2. Jenna / Admin / Lead Host
+
+MOBILE APP STRUCTURE:
+Use a bottom navigation bar on mobile with clean icons and labels.
+
+Main navigation:
+- Home
+- Events
+- Challenges
+- Moments
+- Profile
+
+Optional extra if needed:
+- Notifications
+
+DESIGN THE APP AS MOBILE-FIRST.
+Every screen must look excellent on phone first.
+Avoid desktop-heavy layouts.
+Do not create wide, cluttered, panel-based screens for users.
+
+AUTHENTICATION:
+Create a clean modern signup and login flow.
+
+Signup fields:
+- full name
+- username
+- email
+- phone number
+- city
+- password
+
+Optional:
+- Instagram handle
+
+Authentication requirements:
+- beautiful mobile-first layout
+- easy to type into
+- visible inputs
+- no broken field states
+- remember user session
+- stay logged in after reopening app
+- logout only when user chooses
+- secure auth architecture
+- admin role support for Jenna
+
+ONBOARDING:
+After signup, show a short onboarding sequence introducing the app:
+- stay updated with Jenna
+- join events
+- take part in challenges
+- get notified instantly
+- become part of the Connect Club community
+
+Then encourage users to enable notifications.
+
+HOME SCREEN:
+This is the main social feed and the replacement for WhatsApp updates.
+
+The Home screen should contain:
+- Jenna updates / announcements
+- featured event card
+- active challenge card
+- quick survey or poll if available
+- promoted partner / venue spotlight when relevant
+- recent community moments preview
+
+The feed should feel like a premium social feed, not a messy chat thread.
+
+Types of posts Jenna can create:
+- text update
+- event announcement
+- live location update
+- challenge announcement
+- partner spotlight
+- survey/poll/form prompt
+- reminder post
+
+Each post card should be elegant and easy to scan on mobile.
+Users can react with simple lightweight reactions such as:
+- heart
+- fire
+- hands up
+No need for overly complex public comment systems unless cleanly implemented.
+
+EVENTS SECTION:
+Create a full Events area where users can:
+- see upcoming events
+- open event details
+- RSVP or buy ticket depending on event type
+- check event date, time, location, and details
+- see whether event is free, RSVP-based, or paid
+- check in when arriving
+- optionally see attendee count or limited social proof
+
+Example event types:
+- coffee rave
+- boogie and brunch
+- sauna rave
+- breathwork session
+- yacht event
+- secret location experience
+- pop-up wellness or music event
+
+Event cards should include:
+- title
+- cover image
+- date
+- time
+- location or “secret location”
+- short vibe description
+- price / RSVP status
+- spots left if limited
+
+Event detail screen should include:
+- full description
+- what to expect
+- what to bring if needed
+- venue / location details
+- ticket / RSVP action
+- check-in option if active
+- optional FAQ block
+
+CHECK-IN SYSTEM:
+Support event check-in functionality.
+Users should be able to check in through QR scan or unique event access flow.
+Jenna/admin must be able to track attendance.
+Check-in should feel rewarding and smooth.
+Optionally award points or badges later, but build the structure in a scalable way.
+
+CHALLENGES SECTION:
+This is a key feature and must be treated seriously.
+Jenna needs to be able to create challenge-based activations for her community.
+
+Challenge examples:
+- show up at Saunders between 18:00 and 19:00
+- find Jenna at a posted location
+- scan a QR code to enter
+- upload a photo to complete the challenge
+- answer a prompt to enter a giveaway
+- complete a mini task to win tickets to a boat cruise / yacht event
+
+Each challenge should support:
+- title
+- description / instructions
+- prize
+- start date and end date
+- optional live location
+- optional QR requirement
+- optional image upload proof
+- optional form submission
+- winner announcement state
+
+Challenge cards should show:
+- title
+- prize
+- time left
+- challenge status
+- CTA button
+
+Challenge detail page should include:
+- challenge instructions
+- prize details
+- rules
+- participation method
+- submit / join action
+- countdown if time-sensitive
+
+SURVEYS / FORMS / POLLS:
+This is very important.
+Jenna must be able to publish surveys, forms, and polls directly inside the app.
+Do not make this depend on external tools unless technically necessary.
+
+Examples:
+- what event do you want next?
+- vote for next location
+- RSVP interest form
+- feedback after event
+- early access form
+- partnership/collaboration interest form
+- ticket giveaway form
+
+Requirements:
+- clean in-app form UI
+- mobile-friendly inputs
+- good spacing
+- clear submission states
+- success confirmation after submit
+- responses stored properly
+- admin can review submissions
+
+MOMENTS SECTION:
+Create a Moments area for community memory and culture.
+This is where event photos or short content can live.
+It should feel curated and premium, not chaotic.
+
+Members can:
+- upload event moments
+- view featured moments
+- relive community experiences
+
+Jenna/admin can:
+- approve or feature content if moderation is needed
+- highlight best moments from events
+
+The Moments section should help the app feel alive and social.
+
+PROFILE SECTION:
+Users should have a clean profile with:
+- profile image
+- name
+- username
+- city
+- joined date
+- attended events count
+- completed challenges count
+- saved or upcoming events
+- notification settings
+- logout
+
+Optional later:
+- badges
+- points
+- rewards
+But do not overcomplicate MVP unless architecture is clean.
+
+NOTIFICATIONS SCREEN:
+Include a dedicated notifications page or in-app notification center showing:
+- new event alert
+- challenge alert
+- survey alert
+- partner promo
+- Jenna update
+- check-in confirmation
+- winner announcement
+
+This should complement push notifications.
+
+ADMIN / JENNA DASHBOARD:
+Create a separate admin experience for Jenna.
+This can be more dashboard-like, but still clean and mobile-friendly where possible.
+
+Jenna/admin needs to be able to:
+- create and edit posts
+- create and edit events
+- create and edit challenges
+- create and publish surveys/forms/polls
+- upload media
+- send push notifications
+- manage featured content
+- review submissions
+- review challenge participation
+- review event check-ins
+- review user list
+- review engagement metrics
+
+Admin content types Jenna should be able to publish:
+1. community update
+2. event
+3. challenge
+4. live location
+5. survey
+6. form
+7. poll
+8. partner / venue promotion
+
+PARTNER / BUSINESS PROMOTION FEATURE:
+This app also needs to support Jenna’s business growth.
+
+Jenna must be able to promote:
+- venue partners
+- collaborating businesses
+- sponsors
+- wellness spaces
+- cafés
+- pop-up hosts
+
+Build a structured promotional content type so it feels premium and intentional.
+This should help Jenna secure better deals by giving her a proper branded digital channel.
+
+Examples:
+- featured venue of the week
+- event host venue spotlight
+- sponsor shoutout
+- community partner offer
+- collab announcement
+
+This must feel natural inside the app, not like spammy ads.
+
+DATA / METRICS:
+Add a basic analytics structure for admin so Jenna can understand:
+- total members
+- event views
+- event RSVPs / ticket clicks
+- challenge participation
+- form submissions
+- notification engagement
+- check-ins
+- top-performing content
+
+Even if analytics are simple in MVP, structure the system cleanly.
+
+UX REQUIREMENTS:
+- clean mobile-first spacing
+- no clutter
+- no overlapping text
+- no broken cards
+- no awkward desktop-style tables on user screens
+- all tap targets large enough for phones
+- all inputs must be fully usable and visible
+- smooth scrolling
+- loading states
+- empty states
+- success states
+- error handling
+- polished onboarding
+- polished install prompt
+- premium native-style feeling
+
+DO NOT:
+- do not make it look like a generic event template
+- do not make it feel like a WhatsApp clone
+- do not use ugly default browser styling
+- do not create harsh dark theme unless optional later
+- do not overpack the screens with too much information
+- do not create a desktop-first web app pretending to be mobile
+- do not use overly bright pinks or childish feminine styling
+- do not make the UI feel corporate or boring
+
+TECH STACK DIRECTION:
+Use a stack suitable for a mobile-first social web app / PWA.
+
+Recommended direction:
+Frontend:
+- React
+- Tailwind CSS
+- mobile-first responsive design
+- modern component structure
+- PWA support
+
+Backend:
+- Node.js
+- Express or suitable backend structure
+- database integration
+- authentication
+- notification-ready architecture
+
+Database:
+Use a clean scalable database schema for:
+- users
+- posts
+- events
+- challenges
+- submissions
+- notifications
+- moments
+- partner promotions
+- check-ins
+
+TECHNICAL FEATURES TO SUPPORT:
+- auth with persistent sessions
+- role-based admin access
+- media upload support
+- event creation and management
+- challenge creation and submissions
+- survey/form creation and submissions
+- in-app notifications
+- push notifications
+- PWA installability
+- mobile optimization
+- secure data handling
+
+MVP PRIORITY ORDER:
+Build in this order:
+
+PHASE 1:
+- auth
+- onboarding
+- home feed
+- events
+- challenges
+- profile
+- admin post/event/challenge creation
+- PWA install support
+
+PHASE 2:
+- surveys/forms/polls
+- in-app notifications
+- push notifications
+- event check-ins
+- moments section
+
+PHASE 3:
+- partner promotions
+- analytics
+- advanced moderation
+- deeper engagement tools
+
+UI COPY TONE:
+The app copy should feel:
+- warm
+- inviting
+- community-driven
+- modern
+- clean
+- not robotic
+- not overexplained
+
+Brand voice direction:
+- intimate
+- human
+- lifestyle-led
+- curated
+- premium but friendly
+
+SAMPLE CONTENT DIRECTION:
+Use realistic placeholder content inspired by a lifestyle community:
+- sunrise beach sets
+- boogie and brunch
+- breathwork evenings
+- sauna sessions
+- yacht giveaways
+- secret-location gatherings
+- community drops on the promenade
+- venue spotlights
+- wellness and music culture
+
+FINAL BUILD GOAL:
+Create a polished, mobile-first, installable native-style social community app for Connect Club that replaces WhatsApp as the main community platform.
+
+The final result should make users feel like:
+“I’m inside the Connect Club world.”
+
+And make Jenna feel like:
+“I now have my own branded community platform, not just scattered social tools.”
+
+Please build this carefully, keeping the UX premium, the structure scalable, and the entire experience centered on mobile.
+
+Use that as your main build prompt. For even better results, after it generates the first version, follow with this second prompt:
+
+Now refine everything for a true mobile-native feel.
+
+Focus on:
+- tighter phone-first spacing
+- better bottom navigation
+- smoother card hierarchy
+- more premium matte pink and nude styling
+- cleaner onboarding
+- stronger social feed feel
+- better event and challenge card design
+- more polished install prompt flow
+- stronger notification UX
+- more realistic social app energy
+
+Do not change the product structure.
+Do not remove features.
+Do not corrupt working functionality.
+Only improve visual polish, mobile UX, and native-app feel.
+
+And this third one for safety and cleanup:
+
+Now do a full QA pass on the entire Connect Club app.
+
+Check and fix:
+- broken buttons
+- non-working links
+- overlapping text
+- hidden input text
+- bad mobile spacing
+- forms not submitting
+- session persistence issues
+- install prompt issues
+- navigation inconsistencies
+- challenge submission issues
+- event detail issues
+- notification flow issues
+- admin publishing issues
+- responsiveness problems
+- inconsistent colors or styling
+- anything that makes the app feel unfinished
+
+Do not redesign randomly.
+Do not remove features.
+Do not corrupt existing working sections.
+Keep the matte pink and nude premium mobile aesthetic.
