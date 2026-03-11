@@ -73,7 +73,7 @@ export default function HomeScreen() {
               style={styles.bannerGradient}
             >
               <Text style={styles.bannerLabel}>CONNECT CLUB</Text>
-              <Text style={styles.bannerText}>Jenna's Private Community</Text>
+              <Text style={styles.bannerText}>Connect Club's Private Community</Text>
             </LinearGradient>
           </View>
         </LinearGradient>
@@ -100,7 +100,7 @@ export default function HomeScreen() {
 
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Text style={styles.sectionTitle}>Latest from Jenna</Text>
+            <Text style={styles.sectionTitle}>Latest Updates</Text>
           </View>
           {posts.map((post) => (
             <PostCard

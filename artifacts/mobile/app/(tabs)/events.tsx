@@ -42,7 +42,7 @@ export default function EventsScreen() {
       >
         <View style={styles.header}>
           <Text style={styles.title}>Events</Text>
-          <Text style={styles.subtitle}>Jenna's upcoming experiences</Text>
+          <Text style={styles.subtitle}>Connect Club's upcoming experiences</Text>
         </View>
 
         <ScrollView
@@ -78,7 +78,7 @@ export default function EventsScreen() {
                 ? "Free"
                 : event.price === "rsvp"
                 ? "RSVP Required"
-                : `£${event.price}`;
+                : `R${event.price}`;
 
             const dateStr = new Date(event.date).toLocaleDateString("en-GB", {
               weekday: "long",
@@ -172,7 +172,7 @@ export default function EventsScreen() {
               <Feather name="calendar" size={40} color={Colors.border} />
               <Text style={styles.emptyTitle}>No events found</Text>
               <Text style={styles.emptyText}>
-                Check back soon — Jenna's planning something special.
+                Check back soon — Connect Club is planning something special.
               </Text>
             </View>
           )}

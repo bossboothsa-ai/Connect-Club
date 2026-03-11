@@ -73,7 +73,7 @@ export default function LoginScreen() {
               <Text style={styles.logoIcon}>C</Text>
             </View>
             <Text style={styles.brandName}>Connect Club</Text>
-            <Text style={styles.brandTagline}>Jenna's Private Community</Text>
+            <Text style={styles.brandTagline}>Connect Club's Private Community</Text>
           </Animated.View>
 
           <Animated.View entering={FadeInDown.duration(600).delay(300)} style={styles.form}>

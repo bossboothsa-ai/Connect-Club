@@ -38,7 +38,7 @@ const TYPE_CONFIG: Record<
       { key: "description", label: "Description", placeholder: "Tell people what to expect...", multiline: true },
       { key: "date", label: "Date", placeholder: "2026-04-01" },
       { key: "time", label: "Time", placeholder: "19:00" },
-      { key: "location", label: "Location", placeholder: "Shoreditch, London or 'Secret Location'" },
+      { key: "location", label: "Location", placeholder: "Camps Bay, Cape Town or 'Secret Location'" },
       { key: "price", label: "Price", placeholder: "45 or 'free' or 'rsvp'" },
       { key: "spots", label: "Total Spots", placeholder: "50", optional: true },
       { key: "image", label: "Cover Image URL", placeholder: "https://...", optional: true },
@@ -51,7 +51,7 @@ const TYPE_CONFIG: Record<
     fields: [
       { key: "title", label: "Challenge Title", placeholder: "Win 2 tickets to..." },
       { key: "description", label: "Description", placeholder: "What's this challenge about?", multiline: true },
-      { key: "prize", label: "Prize", placeholder: "2x Event Tickets (worth £80)" },
+      { key: "prize", label: "Prize", placeholder: "2x Event Tickets (worth R450)" },
       { key: "instructions", label: "How to Enter", placeholder: "Step 1...\nStep 2...", multiline: true },
       { key: "startDate", label: "Start Date", placeholder: "2026-03-20" },
       { key: "endDate", label: "End Date", placeholder: "2026-03-25" },
@@ -74,7 +74,7 @@ const TYPE_CONFIG: Record<
     color: "#5A8A5A",
     fields: [
       { key: "title", label: "Drop Title", placeholder: "Find me here right now!" },
-      { key: "location", label: "Location Name", placeholder: "Saunders Café, Columbia Road" },
+      { key: "location", label: "Location Name", placeholder: "Truth Coffee, Buitenkant Street" },
       { key: "message", label: "Message", placeholder: "First 20 people get a surprise...", multiline: true },
       { key: "duration", label: "Duration (hours)", placeholder: "1" },
     ],

@@ -46,7 +46,7 @@ export function EventCard({ event }: EventCardProps) {
       ? "Free"
       : event.price === "rsvp"
       ? "RSVP"
-      : `£${event.price}`;
+      : `R${event.price}`;
 
   const dateStr = formatDate(event.date);
 

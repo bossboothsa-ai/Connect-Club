@@ -43,7 +43,7 @@ export default function EventDetailScreen() {
       ? "Free"
       : event.price === "rsvp"
       ? "RSVP Required"
-      : `£${event.price}`;
+      : `R${event.price}`;
 
   const dateStr = new Date(event.date).toLocaleDateString("en-GB", {
     weekday: "long",
