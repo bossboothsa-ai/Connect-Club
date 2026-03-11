@@ -259,7 +259,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     justifyContent: "space-between",
     padding: 14,
-    background: "linear-gradient(transparent, rgba(0,0,0,0.6))",
   },
   featuredBadge: {
     flexDirection: "row",

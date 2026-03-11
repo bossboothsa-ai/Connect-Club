@@ -1,13 +1,13 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
-import { Image, StyleSheet, Text, View, ViewStyle } from "react-native";
+import { Image, StyleSheet, Text, View, ViewStyle, ImageStyle } from "react-native";
 import { Colors } from "@/constants/colors";
 
 interface AvatarProps {
   name: string;
   image?: string;
   size?: number;
-  style?: ViewStyle;
+  style?: ViewStyle | ImageStyle;
 }
 
 export function Avatar({ name, image, size = 40, style }: AvatarProps) {
@@ -30,7 +30,7 @@ export function Avatar({ name, image, size = 40, style }: AvatarProps) {
             height: size,
             borderRadius: size / 2,
           },
-          style,
+          style as ImageStyle,
         ]}
       />
     );
