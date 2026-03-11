@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: community-builder-api
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm run build
+    startCommand: npm start
+    rootDir: artifacts/api-server
+    healthCheckPath: /api/healthz
+    healthCheckIntervalSeconds: 60
+    healthCheckTimeoutSeconds: 5
+    disk:
+      name: api-storage
+      mountPath: /data
+      sizeGB: 1
+
+    # Environment variables - add your configuration here
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000  # Default Render port
